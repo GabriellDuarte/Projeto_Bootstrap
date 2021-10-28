@@ -12,25 +12,43 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm bg-light">
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">AYA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Alguma coisa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">AYA diferenciada</a>
-            </li>
-          </ul>
+          <a class="navbar-brand" href="#">AYA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Alguma coisa</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 AYA diferenciada
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">'-'</a></li>
+                  <li><a class="dropdown-item" href="#">Não tem nada</a></li>
+                  <li><a class="dropdown-item" href="#">Nem aqui :(</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      
       </nav>
 
-      
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Não funciona..." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Procurar</button>
+          </form>
+        </div>
+      </nav>
 
     <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
